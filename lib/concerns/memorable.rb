@@ -6,4 +6,8 @@ module Memorable
   def count
     self.all.count
   end
+
+  def initialize
+    self.class.all << self
+  end
 end
